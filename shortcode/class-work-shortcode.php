@@ -17,7 +17,9 @@ class Work_Shortcode
         self::$add_script = true;
 
         $html = "
-        <div id=\"work-reviews\"><h1>work-reviews</h1></div>
+        <div id='work-reviews'>
+        <h1>work-reviews</h1>
+        </div>
         ";
 
         return $html;

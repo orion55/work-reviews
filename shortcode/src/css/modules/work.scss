@@ -9,7 +9,7 @@
 .work__box {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   max-width: 1200px;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -50,7 +50,7 @@
 
 .work__text {
   margin-bottom: 20px;
-  max-height: 265px;
+  max-height: 270px;
   overflow: auto;
 }
 
@@ -110,3 +110,4 @@
   width: 44px;
   margin-right: 7px;
 }
+

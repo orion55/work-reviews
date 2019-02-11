@@ -1,12 +1,16 @@
-"use strict";
+'use strict';
 
 jQuery(document).ready(function ($) {
-   /* $('.work__slider').slick({
-      infinite: true,
-      dots: false,
-      speed: 300,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false
-    })*/
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 20
+  });
+
+  $('#work__slider--next').click(function () {
+    swiper.slideNext();
+  });
+
+  $('#work__slider--prev').click(function () {
+    swiper.slidePrev();
+  });
 });

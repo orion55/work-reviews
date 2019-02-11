@@ -111,3 +111,68 @@
   margin-right: 7px;
 }
 
+@media only screen and (min-device-width: 768px) and (max-width: 1199px) {
+  .work__container {
+    width: 100%;
+    padding: 20px;
+  }
+  .work__title {
+    font-size: 35px;
+    padding-bottom: 20px;
+  }
+  .work__box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-width: 320px;
+  }
+  .work__name, .work__text {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .work_text {
+    margin-bottom: 0;
+  }
+  #work-reviews {
+    height: auto;
+    background: url(../img/background1199.jpg) no-repeat center center;
+  }
+  .work__slider {
+    margin-bottom: 30px;
+  }
+  .work__btn {
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .work__container {
+    width: 100%;
+    padding: 20px;
+  }
+  .work__title {
+    font-size: 35px;
+    padding-bottom: 20px;
+  }
+  .work__box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-width: 320px;
+  }
+  .work__name, .work__text {
+    font-size: 14px;
+    line-height: normal;
+  }
+  .work_text {
+    margin-bottom: 0;
+  }
+  #work-reviews {
+    height: auto;
+    background: url(../img/background767.jpg) no-repeat center center;
+  }
+  .work__slider {
+    margin-bottom: 30px;
+  }
+  .work__btn {
+    align-self: center;
+  }
+}

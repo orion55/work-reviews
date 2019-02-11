@@ -67,7 +67,7 @@ class Work_Shortcode
 
         }
 
-        wp_reset_postdata(); // Сбрасываем $post
+        wp_reset_postdata();
 
         return $html;
     }

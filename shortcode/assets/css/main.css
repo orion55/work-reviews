@@ -207,6 +207,121 @@ button.btn--result {
   width: 100%;
 }
 
+.wpcf7-form {
+  padding: 30px 30px 0 30px;
+  margin: 0 auto;
+}
+
+.wpcf7-form .form-group input,
+.wpcf7-form .form-group > span > textarea {
+  box-sizing: border-box;
+  padding: 8px;
+  outline: none;
+  border: 1px solid #F25E99;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  min-height: 35px;
+  background-color: white;
+}
+
+.wpcf7-form .form-group input:hover,
+.wpcf7-form .form-group input:focus,
+.wpcf7-form .form-group > span > textarea:hover,
+.wpcf7-form .form-group > span > textarea:focus {
+  background-color: white;
+  box-shadow: 0 0 5px #F25E99;
+}
+
+.wpcf7-form div.form-group.name > span > input:focus,
+.wpcf7-form div.form-group.email > span > input:focus,
+.wpcf7-form div.form-group.phone > span > input:focus,
+.wpcf7-form .form-group > span > textarea:focus {
+  box-shadow: 0 0 5px #F25E99;
+  border: 1px solid #F25E99;
+  background-color: white;
+}
+
+.wpcf7-form div.name {
+  width: 33%;
+  float: left;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.wpcf7-form div.email {
+  width: 33%;
+  float: left;
+  padding-bottom: 10px;
+}
+
+.wpcf7-form div.phone {
+  width: 33%;
+  float: right;
+  padding-bottom: 10px;
+}
+
+form.wpcf7-form > p {
+  margin-bottom: 0;
+}
+
+.wpcf7-form .btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 0 20px;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 1em 1em;
+  color: #FFFFFF;
+  background-color: #F25E99;
+  transition: background-color .5s ease-out;
+}
+
+.wpcf7-form .btn:active {
+  -webkit-transform: translateY(1px);
+  transform: translateY(1px);
+  -webkit-filter: saturate(150%);
+  filter: saturate(150%);
+}
+
+.wpcf7-form .btn:hover {
+  color: white;
+  border-color: #F25E99;
+  background-color: #333333;
+}
+
+.wpcf7-form .btn::-moz-focus-inner {
+  border: none;
+}
+
+.wpcf7-form .btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(129, 170, 33, 0.5), 0 0 0 1.5px rgba(129, 170, 33, 0.5);
+}
+
+.wpcf7-form .form-group br {
+  display: none;
+}
+
+span.wpcf7-list-item {
+  margin: 0;
+}
+
+span.wpcf7-list-item label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+span.wpcf7-list-item .wpcf7-list-item-label {
+  padding-top: 2px;
+}
+
+form.wpcf7-form.sent div.wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok {
+  background-color: white;
+  margin-top: 0;
+}
+
 @media only screen and (min-device-width: 768px) and (max-width: 1199px) {
   .work__container {
     width: 100%;
@@ -299,5 +414,15 @@ button.btn--result {
 
   .work__item {
     margin-bottom: 0;
+  }
+
+  .wpcf7-form div.name,
+  .wpcf7-form div.email,
+  .wpcf7-form div.phone {
+    width: 100%;
+  }
+
+  .wpcf7-form div.name {
+    padding-right: 0;
   }
 }

@@ -62,7 +62,7 @@ class Work_Shortcode
                     </div>                        
                     </div>
                     <div class='work__btn'>
-                        <button type='button' class='btn btn--result hvr-pop'>Оставьте свой отзыв</button>
+                        <button type='button' class='btn btn--result hvr-pop' id='btnFeedback'>Оставьте свой отзыв</button>
                     </div>                    
                 </div>                
             </div>

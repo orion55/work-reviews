@@ -435,4 +435,8 @@ form.wpcf7-form.sent div.wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sen
   .wpcf7-form div.name {
     padding-right: 0;
   }
+
+  .wpcf7-form {
+    padding: 0;
+  }
 }

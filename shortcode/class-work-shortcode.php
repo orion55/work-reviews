@@ -21,7 +21,7 @@ class Work_Shortcode
         global $post;
 
         $myposts = get_posts([
-            'numberposts' => 5,
+            'numberposts' => 10,
             'orderby' => 'date',
             'order' => 'DESC',
             'post_type' => 'work_reviews'

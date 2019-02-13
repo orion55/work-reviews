@@ -3,6 +3,7 @@
 .wpcf7 {
   background: white;
   border: none;
+  width: 100%;
 }
 
 .wpcf7-form {
@@ -20,6 +21,7 @@
   min-height: 35px;
   background-color: white;
   width: 100%;
+  font-size: 16px;
   &:hover, &:focus {
     background-color: white;
     box-shadow: 0 0 5px $color-main;
@@ -71,7 +73,7 @@ form.wpcf7-form > p {
 
     transition: background-color .5s ease-out;
 
-    padding: 0 28px;
+    padding: 0 50px;
 
     line-height: 40px;
     border-radius: 20px;
@@ -95,8 +97,8 @@ form.wpcf7-form > p {
 
   .btn:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(129, 170, 33, 0.5),
-    0 0 0 1.5px rgba(129, 170, 33, 0.5);
+    box-shadow: 0 0 0 3px rgba(242, 94, 153, 0.5),
+    0 0 0 1.5px rgba(242, 94, 153, 0.5);
   }
   .form-group br {
     display: none;

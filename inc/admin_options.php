@@ -29,15 +29,6 @@ class WorkReviews {
 			<h2>WorkReviews</h2>
             <p>Отзывы о работе клининговой компании</p>
             <p><b>[work-reviews]</b> - шорткод для вставки отзывов</p>
-			<?php settings_errors(); ?>
-
-			<form method="post" action="options.php">
-				<?php
-					settings_fields( 'workreviews_option_group' );
-					do_settings_sections( 'workreviews-admin' );
-					submit_button();
-				?>
-			</form>
 		</div>
 	<?php }
 
@@ -54,42 +45,7 @@ class WorkReviews {
 			array( $this, 'workreviews_section_info' ), // callback
 			'workreviews-admin' // page
 		);
-
-		add_settings_field(
-			'nnm_0', // id
-			'Nnm', // title
-			array( $this, 'nnm_0_callback' ), // callback
-			'workreviews-admin', // page
-			'workreviews_setting_section' // section
-		);
 	}
-
-	public function workreviews_sanitize($input) {
-		$sanitary_values = array();
-		if ( isset( $input['nnm_0'] ) ) {
-			$sanitary_values['nnm_0'] = sanitize_text_field( $input['nnm_0'] );
-		}
-
-		return $sanitary_values;
-	}
-
-	public function workreviews_section_info() {
-
-	}
-
-	public function nnm_0_callback() {
-		printf(
-			'<input class="regular-text" type="text" name="workreviews_option_name[nnm_0]" id="nnm_0" value="%s">',
-			isset( $this->workreviews_options['nnm_0'] ) ? esc_attr( $this->workreviews_options['nnm_0']) : ''
-		);
-	}
-
 }
 if ( is_admin() )
 	$workreviews = new WorkReviews();
-
-/*
- * Retrieve this value with:
- * $workreviews_options = get_option( 'workreviews_option_name' ); // Array of All Options
- * $nnm_0 = $workreviews_options['nnm_0']; // Nnm
- */
